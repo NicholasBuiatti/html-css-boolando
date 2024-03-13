@@ -27,6 +27,12 @@ footer {
     width: 100%;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.2rem;
+}
+
 :root {
     --altezza-head-bar: 4rem
 }
@@ -48,7 +54,23 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
+}
+
+.selector,
+.shop {
+    width: 20%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo > img {
+    width: 20%;
+}
+
+.shop {
+    text-align: end;
 }
 
 /************* MAIN *************/
