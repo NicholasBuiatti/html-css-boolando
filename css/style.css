@@ -6,4 +6,76 @@
     padding: 0;
 }
 
+header {
+    min-height: var(--altezza-head-bar);
+    min-width: 100%;
+    background-color: orangered;
+    position: fixed;
+    z-index: 1;
+}
+
+main {
+    min-height: 40rem;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: green;
+}
+
+footer {
+    background-color: black;
+    min-height: 5rem;
+    width: 100%;
+}
+
+:root {
+    --altezza-head-bar: 4rem
+}
+
+/************* CLASSI DEBUG *************/
+
+.debug .row,
+.debug .article {
+    height: 12rem;
+}
+
 /************* IMPOSTAZIONI SPECIFICHE *************/
+/************* HEADER *************/
+
+.flex-conteiner {
+    height: var(--altezza-head-bar);
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+}
+
+/************* MAIN *************/
+
+.row {
+    position: relative;
+    top: 5rem;
+    margin-bottom: 5rem;
+    background-color: black;
+}
+
+.article {
+    width: 15%;
+    background-color: red;
+    position: absolute;
+}
+
+.article-center {
+    left: 50%;
+    background-color: blue;
+    transform: translateX(-50%);
+}
+
+.article-right {
+    right: 0;
+    background-color: yellow;
+}
+
+/************* FOOTER *************/
+
