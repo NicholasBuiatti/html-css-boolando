@@ -18,7 +18,6 @@ main {
     min-height: 80rem;
     width: 1000px;
     margin: 0 auto;
-    background-color: green;
 }
 
 footer {
@@ -31,6 +30,10 @@ a {
     color: white;
     text-decoration: none;
     margin: 0 0.2rem;
+}
+
+.margin-bottom {
+    margin-bottom: 15rem;
 }
 
 :root {
@@ -76,27 +79,21 @@ a {
     height: 20rem;
     position: relative;
     top: 5rem;
-    /* background-color: black; */
-    margin-bottom: 5rem;
 }
-
 
 .article {
     /* height: 4rem; */
     width: 30%;
-    /* background-color: red; */
     position: absolute;
 }
 
 .article-center {
     left: 50%;
-    background-color: blue;
     transform: translateX(-50%);
 }
 
 .article-right {
     right: 0;
-    background-color: yellow;
 }
 
 /************* CONTENUTO BOX-ARTICLE *************/
@@ -131,5 +128,45 @@ a {
 span {
     text-decoration: line-through black;
 }
-/************* FOOTER *************/
+/************* :HOVER-IMG *************/
+
+.img-retro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.img-front:hover {
+    opacity: 0;
+}
+
+.heart-retro {
+    z-index: 1;
+    color: black;
+}
+
+.heart:hover{
+    opacity: 0;
+}
+
+/************* :HOVER-IMG *************/
+
+footer h2 {
+    color: white;
+    margin-left: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    margin-left: 0;
+}
+
+footer h3 {
+    color: white;
+}
+
+.find-us {
+    text-align: center;
+}
 
